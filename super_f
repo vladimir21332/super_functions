@@ -34,4 +34,17 @@ driver.get('http://admin:admin@ URL')
 # https://youtu.be/ttFg6mwWe7g?t=1273
 
 
+################ random email generator ####################
+
+def random_generator(size=8, chars=string.ascii_lowercase + string.digits):
+    return ''.join(random.choice(chars) for x in range(size))
+
+print(random_generator())
+
+def email():
+    return random_generator() + "@gmail.com"
+print(email())
+
+
+
 

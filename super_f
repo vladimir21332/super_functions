@@ -67,6 +67,10 @@ def divide(x, y):
 
 divide(3, 2)
 # divide(3, 0)
+########### text #############
+
+    def text(self):
+        return self.wait.until(ec.visibility_of_element_located((By.XPATH, '//*[@id="pay-my-bill"]/h2'))).text
       
 
 

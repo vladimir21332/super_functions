@@ -71,6 +71,14 @@ divide(3, 2)
 
     def text(self):
         return self.wait.until(ec.visibility_of_element_located((By.XPATH, '//*[@id="pay-my-bill"]/h2'))).text
+        
+        
+        ######### close covid pop up #############
+        
+         def close_covid_ad(self):
+        self.covid_ad.click()
+        return SigninPage(self.driver)
+
       
 
 
